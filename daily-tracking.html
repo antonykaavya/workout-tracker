@@ -1,156 +1,179 @@
-{
-	"type": "serial",
-	"categoryField": "date",
-	"startDuration": 1,
-	"categoryAxis": {
-		"gridPosition": "start"
-	},
-	"trendLines": [],
-	"graphs": [
-		{
-			"balloonText": "[[title]] of [[category]]:[[value]]",
-			"columnIndexField": "date",
-			"fillAlphas": 1,
-			"id": "AmGraph-1",
-			"title": "yoga",
-			"type": "column",
-			"valueField": "yoga",
-			"xField": "date",
-			"yField": "yoga"
-		},
-		{
-			"balloonText": "[[title]] of [[category]]:[[value]]",
-			"columnIndexField": "date",
-			"fillAlphas": 1,
-			"id": "AmGraph-2",
-			"title": "cardio",
-			"type": "column",
-			"valueField": "cardio",
-			"xField": "date",
-			"yField": "cardio"
-		},
-		{
-			"columnIndexField": "date",
-			"fillAlphas": 0.68,
-			"id": "AmGraph-3",
-			"title": "zumba",
-			"type": "column",
-			"valueAxis": "ValueAxis-1",
-			"valueField": "zumba",
-			"xField": "date",
-			"yField": "zumba"
-		},
-		{
-			"alphaField": "date",
-			"columnIndexField": "date",
-			"fillAlphas": 0.68,
-			"id": "AmGraph-4",
-			"lineAlpha": 0.71,
-			"title": "weights",
-			"type": "column",
-			"valueField": "weights",
-			"xAxis": "ValueAxis-1",
-			"xField": "date",
-			"yAxis": "ValueAxis-1",
-			"yField": "weights"
-		}
-	],
-	"guides": [],
-	"valueAxes": [
-		{
-			"stackType": "regular",
-		}
-	],
-	"allLabels": [],
-	"balloon": {},
-	"legend": {
-		"enabled": true,
-		"useGraphSettings": true
-	},
-	"titles": [
-		{
-			"id": "Title-1",
-			"size": 15,
-			"text": "Type of Workout Daily"
-		}
-	],
-	"dataProvider": [
-		{
-			"date": "2019-09-11",
-			"yoga": "10",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "0"
-		},
-		{
-			"date": "2019-09-12",
-			"yoga": "0",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "0"
-		},
-		{
-			"date": "2019-09-13",
-			"yoga": "0",
-			"cardio": "10",
-			"zumba": "0",
-			"weights": "0"
-		},
-		{
-			"date": "2019-09-14",
-			"yoga": "0",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "10"
-		},
-		{
-			"date": "2019-09-15",
-			"yoga": "10",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "0"
-		},
-		{
-			"date": "2019-09-16",
-			"yoga": "0",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "0"
-		},
-		{
-			"date": "2019-09-17",
-			"yoga": "0",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "10"
-		},
-		{
-			"date": "2019-09-18",
-			"yoga": "0",
-			"cardio": "0",
-			"zumba": "10",
-			"weights": "0"
-		},
-		{
-			"date": "2019-09-19",
-			"yoga": "0",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "10"
-		}, 
-		{
-			"date": "2019-09-20",
-			"yoga": "0",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "0"
-		},
-		{
-			"date": "2019-09-21",
-			"yoga": "0",
-			"cardio": "0",
-			"zumba": "0",
-			"weights": "10"
-		}
-	]
-}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>chart created with amCharts | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "date",
+					"startDuration": 1,
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"columnIndexField": "date",
+							"fillAlphas": 1,
+							"id": "AmGraph-1",
+							"title": "graph 1",
+							"type": "column",
+							"valueField": "yoga",
+							"xField": "date",
+							"yField": "yoga"
+						},
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"columnIndexField": "date",
+							"fillAlphas": 1,
+							"id": "AmGraph-2",
+							"title": "graph 2",
+							"type": "column",
+							"valueField": "cardio",
+							"xField": "date",
+							"yField": "cardio"
+						},
+						{
+							"columnIndexField": "date",
+							"fillAlphas": 0.68,
+							"id": "AmGraph-3",
+							"title": "graph 3",
+							"type": "column",
+							"valueAxis": "ValueAxis-1",
+							"valueField": "zumba",
+							"xField": "date",
+							"yField": "zumba"
+						},
+						{
+							"alphaField": "date",
+							"columnIndexField": "date",
+							"fillAlphas": 0.68,
+							"id": "AmGraph-4",
+							"lineAlpha": 0.71,
+							"title": "weights",
+							"type": "column",
+							"valueField": "weights",
+							"xAxis": "ValueAxis-1",
+							"xField": "date",
+							"yAxis": "ValueAxis-1",
+							"yField": "weights"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"stackType": "regular",
+							"title": "Axis title"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"useGraphSettings": true
+					},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Type of Workout Daily"
+						}
+					],
+					"dataProvider": [
+						{
+							"date": "2019-09-11",
+							"yoga": "10",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "0"
+						},
+						{
+							"date": "2019-09-12",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "0"
+						},
+						{
+							"date": "2019-09-13",
+							"yoga": "0",
+							"cardio": "10",
+							"zumba": "0",
+							"weights": "0"
+						},
+						{
+							"date": "2019-09-14",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "10"
+						},
+						{
+							"date": "2019-09-15",
+							"yoga": "10",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "0"
+						},
+						{
+							"date": "2019-09-16",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "0"
+						},
+						{
+							"date": "2019-09-17",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "10"
+						},
+						{
+							"date": "2019-09-18",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "10",
+							"weights": "0"
+						},
+						{
+							"date": "2019-09-19",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "10"
+						},
+						{
+							"date": "2019-09-20",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "0"
+						},
+						{
+							"date": "2019-09-21",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "10"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+	</body>
+</html>
