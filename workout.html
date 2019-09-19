@@ -122,6 +122,54 @@
 					]
 				}
 			);
+			
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "date",
+					"dataDateFormat": "YYYY-MM-DD",
+					"categoryAxis": {
+						"parseDates": true
+					},
+					"chartCursor": {
+						"enabled": true
+					},
+					"chartScrollbar": {
+						"enabled": true
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"bullet": "round",
+							"id": "AmGraph-1",
+							"title": "",
+							"valueField": "kettlebell squats"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Weights (lbs)"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Kettlebell Squats"
+						}
+					],
+					"dataProvider": [
+						{
+							"date": "2019-09-19",
+							"kettlebell squats": "352"
+						}
+					]
+				}
+			);
 		</script>
 	</head>
 	<body>
