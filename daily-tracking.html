@@ -14,11 +14,9 @@
 			AmCharts.makeChart("chartdiv",
 				{
 					"type": "serial",
-					"categoryField": "category",
+					"categoryField": "date",
 					"dataDateFormat": "YYYY-MM-DD",
-					"startDuration": 1,
 					"categoryAxis": {
-						"gridPosition": "start",
 						"parseDates": true
 					},
 					"chartCursor": {
@@ -30,30 +28,47 @@
 					"trendLines": [],
 					"graphs": [
 						{
-							"fillAlphas": 1,
+							"fillAlphas": 0.7,
 							"id": "AmGraph-1",
+							"lineAlpha": 0,
 							"title": "yoga",
 							"type": "column",
-							"valueField": "column-1"
-						}, 
-            {
-							"fillAlphas": 1,
-							"id": "AmGraph-1",
+							"valueField": "yoga"
+						},
+						{
+							"fillAlphas": 0.7,
+							"id": "AmGraph-2",
+							"lineAlpha": 0,
 							"title": "cardio",
 							"type": "column",
-							"valueField": "column-2"
-						}, 
-            
-					],
-					"guides": [],
-					"valueAxes": [
+							"valueField": "cardio"
+						},
 						{
-							"id": "ValueAxis-1",
-							"title": "Axis title"
+							"columnWidth": 0.66,
+							"fillAlphas": 0.68,
+							"id": "AmGraph-3",
+							"negativeFillAlphas": 0,
+							"title": "zumba",
+							"type": "column",
+							"valueField": "zumba"
+						},
+						{
+							"columnWidth": 0.7,
+							"fillAlphas": 0.74,
+							"fillToAxis": "ValueAxis-1",
+							"id": "AmGraph-4",
+							"title": "weight",
+							"type": "column",
+							"valueField": "weights"
 						}
 					],
+					"guides": [],
+					"valueAxes": [],
 					"allLabels": [],
 					"balloon": {},
+					"legend": {
+						"enabled": true
+					},
 					"titles": [
 						{
 							"id": "Title-1",
@@ -63,39 +78,53 @@
 					],
 					"dataProvider": [
 						{
-							"category": "2019-09-11",
-							"column-1": "10",
-              "column-2":0
+							"date": "2019-09-11",
+							"yoga": "10",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "0"
 						},
 						{
-							"category": "2019-09-13",
-							"column-1": "0",
-              "column-2":10
+							"date": "2019-09-13",
+							"yoga": "0",
+							"cardio": "10",
+							"zumba": "0",
+							"weights": "0"
 						},
 						{
-							"category": "2019-09-14",
-							"column-1": "0",
-              "column-2":0
+							"date": "2019-09-14",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "10"
 						},
 						{
-							"category": "2019-09-16",
-							"column-1": "10",
-              "column-2":0
+							"date": "2019-09-16",
+							"yoga": "10",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "0"
 						},
 						{
-							"category": "2019-09-17",
-							"column-1": "0",
-              "column-2":0
+							"date": "2019-09-17",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "10"
 						},
 						{
-							"category": "2019-09-18",
-							"column-1": "0",
-              "column-2":0
+							"date": "2019-09-18",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "10",
+							"weights": "0"
 						},
 						{
-							"category": "2019-09-19",
-							"column-1": "0",
-              "column-2":0
+							"date": "2019-09-19",
+							"yoga": "0",
+							"cardio": "0",
+							"zumba": "0",
+							"weights": "10"
 						}
 					]
 				}
